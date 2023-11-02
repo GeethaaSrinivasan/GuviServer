@@ -4,7 +4,8 @@ host: "sql12.freesqldatabase.com",
 user: "sql12656888",
 password: "tIRbec3H7z",
 database:"sql12656888",
-port:3307
+port:3307,
+connectTimeout: 30000
 })
 
 module.exports = db;

@@ -7,7 +7,6 @@ const PORT = 3004;
 app.use(cors());
 app.use(express.json());
 
-app.use(express.static(path.resolve(__dirname, "./client/build")));
 // Route to get all posts
 app.get("/api/get", (req, res) => {
   db.query("SELECT * FROM USERDETAILS", (err, result) => {

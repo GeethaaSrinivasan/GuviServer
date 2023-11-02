@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  console.log("hello")
+  console.log("hello");
 });
 
 // Route to get all posts

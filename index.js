@@ -7,6 +7,10 @@ const PORT = 80;
 app.use(cors());
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  console.log("hello")
+});
+
 // Route to get all posts
 app.get("/api/get", (req, res) => {
   db.query("SELECT * FROM USERDETAILS", (err, result) => {
